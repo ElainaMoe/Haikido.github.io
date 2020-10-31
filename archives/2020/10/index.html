@@ -7,14 +7,14 @@
 
   
   
-  <title>Archives: 2020/10 | GamerNoTitle - </title>
+  <title>Archives: 2020/10 | GamerNoTitle - 这是一个随便建立的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="GamerNoTitle">
 <meta property="og:url" content="http://example.com/archives/2020/10/index.html">
 <meta property="og:site_name" content="GamerNoTitle">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="GamerNoTitle">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="GamerNoTitle" type="application/atom+xml">
@@ -32,7 +32,7 @@
 
   <meta name="generator" content="Hexo 5.2.0"></head>
 
-<body class="cui-color-theme-o-apple" onload="changedTheme()" id="page">
+<body class="cui-color-theme-o-bilibili" onload="changedTheme()" id="page">
   
 
 
@@ -95,7 +95,7 @@ jQuery(window).load(function() {
 				
 				  <a  class="cui-color-theme" href="/tags">🏷  Tags</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				
-				  <a  class="cui-color-theme" href="/friends">🙈  Friends</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <a  class="cui-color-theme" href="/link">🙈  Link</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				
 				  <a  class="cui-color-theme" href="/about">👴  About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				
@@ -153,6 +153,16 @@ jQuery(window).load(function() {
     </div>
 </div>
 
+<div class="cui-dialog" id="dialog1-1">
+  <div class="cui-dialog-wrapper cui-typo cui-dialog-wrapper-hight-400">
+    <div id="site_search">
+      <input type="text" id="local-search-input" style="width: 100%;" results="0"/>
+      <div id="local-search-result"></div>
+    </div>
+  </div>
+  <div class="cui-dialog-overlay cui-blur cui-cover-dark" cui-dialog="open1-1"></div>
+</div>
+
 	 
 		<div class="widget-wrap animate__animated animate__fadeInUp">
     <div class="widget">
@@ -162,7 +172,11 @@ jQuery(window).load(function() {
 	  <a class="cui-color-y-yellow cui-shadow-heavy-yellow theme-dot" onclick="changeThemeYYellow()"></a>&nbsp;&nbsp;
 	  <a class="cui-color-s-green cui-shadow-heavy-green theme-dot" onclick="changeThemeSGreen()"></a>&nbsp;&nbsp;
 	  <a class="cui-color-y-purple cui-shadow-heavy-purple theme-dot" onclick="changeThemeYPurple()"></a>&nbsp;&nbsp;
-	  <a class="cui-color-l-yellow cui-shadow-heavy-yellow theme-dot" onclick="changeThemeLYellow()"></a>&nbsp;&nbsp;
+    <a class="cui-color-l-yellow cui-shadow-heavy-yellow theme-dot" onclick="changeThemeLYellow()"></a>&nbsp;&nbsp;
+    <!-- <a class="cui-color-o-zhihu cui-shadow-heavy-blue theme-dot" onclick="changeThemeOZhihu()"></a>&nbsp;&nbsp;
+	  <a class="cui-color-o-bilibili cui-shadow-heavy-pink theme-dot" onclick="changeThemeObilibili()"></a>&nbsp;&nbsp;
+	  <a class="cui-color-o-xhub cui-shadow-heavy-blue theme-dot" onclick="changeThemeOXhub()"></a>&nbsp;&nbsp;
+	  <a class="cui-color-white cui-shadow-heavy-blue theme-dot" onclick="changeThemewhite()"></a>&nbsp;&nbsp; -->
     </div>
 </div>
 <script>
@@ -170,7 +184,7 @@ jQuery(window).load(function() {
       var changedThemeName = document.cookie;
       var changedTheme = document.getElementById("page");
       if( changedThemeName == "" ){
-          changedTheme.className = "cui-color-theme-o-apple";
+          changedTheme.className = "cui-color-theme-o-bilibili";
       }else{
           changedTheme.className = changedThemeName;
       }
@@ -210,6 +224,27 @@ jQuery(window).load(function() {
     changeThemeLYellow.className="cui-color-theme-l-yellow";
     document.cookie="cui-color-theme-l-yellow; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
   }
+  // function changeThemeOzhihu(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-o-zhihu";
+  //   document.cookie="cui-color-theme-o-zhihu; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+  // function changeThemeObilibili(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-o-bilibili";
+  //   document.cookie="cui-color-theme-o-bilibili; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+  // function changeThemeOXhub(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-o-xhub";
+  //   document.cookie="cui-color-theme-o-xhub; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+  // function changeThemewhite(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-white";
+  //   document.cookie="cui-color-theme-white; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+
 </script>
 
 	 
@@ -251,6 +286,16 @@ jQuery(window).load(function() {
     </div>
 </div>
 
+<div class="cui-dialog" id="dialog1-1">
+  <div class="cui-dialog-wrapper cui-typo cui-dialog-wrapper-hight-400">
+    <div id="site_search">
+      <input type="text" id="local-search-input" style="width: 100%;" results="0"/>
+      <div id="local-search-result"></div>
+    </div>
+  </div>
+  <div class="cui-dialog-overlay cui-blur cui-cover-dark" cui-dialog="open1-1"></div>
+</div>
+
 					 
 						<div class="widget-wrap animate__animated animate__fadeInUp">
     <div class="widget">
@@ -260,7 +305,11 @@ jQuery(window).load(function() {
 	  <a class="cui-color-y-yellow cui-shadow-heavy-yellow theme-dot" onclick="changeThemeYYellow()"></a>&nbsp;&nbsp;
 	  <a class="cui-color-s-green cui-shadow-heavy-green theme-dot" onclick="changeThemeSGreen()"></a>&nbsp;&nbsp;
 	  <a class="cui-color-y-purple cui-shadow-heavy-purple theme-dot" onclick="changeThemeYPurple()"></a>&nbsp;&nbsp;
-	  <a class="cui-color-l-yellow cui-shadow-heavy-yellow theme-dot" onclick="changeThemeLYellow()"></a>&nbsp;&nbsp;
+    <a class="cui-color-l-yellow cui-shadow-heavy-yellow theme-dot" onclick="changeThemeLYellow()"></a>&nbsp;&nbsp;
+    <!-- <a class="cui-color-o-zhihu cui-shadow-heavy-blue theme-dot" onclick="changeThemeOZhihu()"></a>&nbsp;&nbsp;
+	  <a class="cui-color-o-bilibili cui-shadow-heavy-pink theme-dot" onclick="changeThemeObilibili()"></a>&nbsp;&nbsp;
+	  <a class="cui-color-o-xhub cui-shadow-heavy-blue theme-dot" onclick="changeThemeOXhub()"></a>&nbsp;&nbsp;
+	  <a class="cui-color-white cui-shadow-heavy-blue theme-dot" onclick="changeThemewhite()"></a>&nbsp;&nbsp; -->
     </div>
 </div>
 <script>
@@ -268,7 +317,7 @@ jQuery(window).load(function() {
       var changedThemeName = document.cookie;
       var changedTheme = document.getElementById("page");
       if( changedThemeName == "" ){
-          changedTheme.className = "cui-color-theme-o-apple";
+          changedTheme.className = "cui-color-theme-o-bilibili";
       }else{
           changedTheme.className = changedThemeName;
       }
@@ -308,6 +357,27 @@ jQuery(window).load(function() {
     changeThemeLYellow.className="cui-color-theme-l-yellow";
     document.cookie="cui-color-theme-l-yellow; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
   }
+  // function changeThemeOzhihu(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-o-zhihu";
+  //   document.cookie="cui-color-theme-o-zhihu; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+  // function changeThemeObilibili(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-o-bilibili";
+  //   document.cookie="cui-color-theme-o-bilibili; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+  // function changeThemeOXhub(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-o-xhub";
+  //   document.cookie="cui-color-theme-o-xhub; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+  // function changeThemewhite(){
+  //   var changeThemeLYellow = document.getElementById("page");
+  //   changeThemeLYellow.className="cui-color-theme-white";
+  //   document.cookie="cui-color-theme-white; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
+  // }
+
 </script>
 
 					 
@@ -328,7 +398,7 @@ jQuery(window).load(function() {
 			</li>
 		  
 		    <li style="text-align:right;font-size:16px;height:30px;display:block;margin-right:10px;margin-top:4px">
-				<a class="dol-text-color" style="width:100%;display:block;text-decoration:none;" href="/friends">🙈  Friends</a>
+				<a class="dol-text-color" style="width:100%;display:block;text-decoration:none;" href="/link">🙈  Link</a>
 			</li>
 		  
 		    <li style="text-align:right;font-size:16px;height:30px;display:block;margin-right:10px;margin-top:4px">
@@ -338,15 +408,27 @@ jQuery(window).load(function() {
 	  </ul>
 
           
+		    <a cui-dialog="open1-1" class="cui-btn-icon"><i class="mdui-icon material-icons">&#xe8b6;</i> </a>
+		  
     </div>
   </div>
 
+
+<div class="cui-dialog" id="dialog1-1">
+  <div class="cui-dialog-wrapper cui-typo cui-dialog-wrapper-hight-400">
+    <div id="site_search">
+      <input type="text" id="local-search-input" class="search-input" results="0"/>
+      <div id="local-search-result"></div>
+    </div>
+  </div>
+  <div class="cui-dialog-overlay cui-blur cui-cover-dark" cui-dialog="open1-1"></div>
+</div>
 
 					 
 				</aside>
 				<footer class="cui-typo widget-wrap animate__animated animate__fadeInUp">
 				    <div class="widget" id="footer-info">
-				      &copy; 2020 John Doe<br>
+				      &copy; 2020 GamerNoTitle<br>
 				      Powered by <a href="http://hexo.io/" class="cui-typo-a" target="_blank">Hexo</a>
 					  & <a href="http://github.com/bochili/Hexo-Theme-Abyss" class="cui-typo-a" target="_blank">Abyss</a>
 				    </div>
@@ -373,6 +455,103 @@ jQuery(window).load(function() {
 			});
 		</script>
 
+
+<script>
+var searchFunc = function(path, search_id, content_id) {
+    'use strict'; //使用严格模式
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        success: function( xmlResponse ) {
+            // 从xml中获取相应的标题等数据
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            //ID选择器
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length <= 0) {
+                    return;
+                }
+                // 本地搜索主要部分
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // 只匹配非空文章
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // 返回搜索结果
+                    if (isMatch) {
+                    //结果标签
+                        str += "<li><a href='"+ data_url +"' class='search-result-title' target='_blank'>" + data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // 拿出含有搜索字的部分
+                            var start = first_occur - 6;
+                            var end = first_occur + 6;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 6;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substr(start, end); 
+                            // 列出搜索关键字，定义class加高亮
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<em class=\"search-keyword cui-color-y-red\">"+keyword+"</em>");
+                            })
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                    }
+                })
+                $resultContent.innerHTML = str;
+            })
+        }
+    })
+};
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('[cui-dialog="open1-1"]').click(function() {
+      $('#dialog1-1').toggleClass('toggled');
+    });
+  });
+</script>
 
     </div>
     
