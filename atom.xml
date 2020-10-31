@@ -3,11 +3,11 @@
   <title>GamerNoTitle</title>
   
   <subtitle>A website made by GamerNoTitle casually</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://casual.bili33.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://casual.bili33.top/"/>
   <updated>2020-10-31T10:52:47.811Z</updated>
-  <id>http://example.com/</id>
+  <id>https://casual.bili33.top/</id>
   
   <author>
     <name>GamerNoTitle</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/articles/hello-world/"/>
-    <id>http://example.com/articles/hello-world/</id>
+    <link href="https://casual.bili33.top/articles/hello-world/"/>
+    <id>https://casual.bili33.top/articles/hello-world/</id>
     <published>2020-10-31T10:52:47.811Z</published>
     <updated>2020-10-31T10:52:47.811Z</updated>
     
