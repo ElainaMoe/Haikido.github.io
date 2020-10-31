@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>GamerNoTitle</title>
   
-  <subtitle>这是一个随便建立的小站</subtitle>
+  <subtitle>A website made by GamerNoTitle casually</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
