@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Notebook</title>
+  <title>GamerNoTitle</title>
   
   <subtitle>A website made by GamerNoTitle casually</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2020/10/31/hello-world/"/>
-    <id>http://example.com/2020/10/31/hello-world/</id>
+    <link href="http://example.com/articles/hello-world/"/>
+    <id>http://example.com/articles/hello-world/</id>
     <published>2020-10-31T10:52:47.811Z</published>
     <updated>2020-10-31T10:52:47.811Z</updated>
     
