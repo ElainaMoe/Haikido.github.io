@@ -6,7 +6,7 @@
   <link href="https://casual.bili33.top/atom.xml" rel="self"/>
   
   <link href="https://casual.bili33.top/"/>
-  <updated>2020-10-31T10:52:47.811Z</updated>
+  <updated>2020-11-01T00:31:55.567Z</updated>
   <id>https://casual.bili33.top/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://casual.bili33.top/articles/test/"/>
+    <id>https://casual.bili33.top/articles/test/</id>
+    <published>2020-11-01T00:31:55.000Z</published>
+    <updated>2020-11-01T00:31:55.567Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
