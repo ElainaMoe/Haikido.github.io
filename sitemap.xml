@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://casual.bili33.top/articles/test/</loc>
+    <loc>https://casual.bili33.top/articles/Heroku-V2ray/</loc>
     
     <lastmod>2020-11-01</lastmod>
     
@@ -50,13 +50,6 @@
     
   </url>
   
-  <url>
-    <loc>https://casual.bili33.top/articles/hello-world/</loc>
-    
-    <lastmod>2020-10-31</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://casual.bili33.top/</loc>
@@ -66,6 +59,20 @@
   </url>
 
   
+  <url>
+    <loc>https://casual.bili33.top/tags/Tech/</loc>
+    <lastmod>2020-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://casual.bili33.top/categories/Tech/</loc>
+    <lastmod>2020-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>

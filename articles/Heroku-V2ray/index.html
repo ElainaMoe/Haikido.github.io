@@ -7,17 +7,24 @@
 
   
   
-  <title>test | GamerNoTitle - A website made by GamerNoTitle casually</title>
+  <title>用Heroku自建V2ray作为紧急连接 | GamerNoTitle - A website made by GamerNoTitle casually</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="https://casual.bili33.top/articles/test/index.html">
+  <meta name="description" content="免责声明请遵循当地法律使用，如有违反当地法律造成的责任，拒不承担 Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。 可以部署两个以上的应用，实现 负载均衡，避免长时间大流量连接某一应用而被 Heroku 判定为滥用。 Heroku 的网络并不稳定，部署前请三思。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Heroku自建V2ray作为紧急连接">
+<meta property="og:url" content="https://casual.bili33.top/articles/Heroku-V2ray/index.html">
 <meta property="og:site_name" content="GamerNoTitle">
+<meta property="og:description" content="免责声明请遵循当地法律使用，如有违反当地法律造成的责任，拒不承担 Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。 可以部署两个以上的应用，实现 负载均衡，避免长时间大流量连接某一应用而被 Heroku 判定为滥用。 Heroku 的网络并不稳定，部署前请三思。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-01T00:31:55.000Z">
-<meta property="article:modified_time" content="2020-11-01T00:31:55.567Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/deploy.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/change-uuid.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/v2conf.png">
+<meta property="article:published_time" content="2020-11-01T01:46:44.000Z">
+<meta property="article:modified_time" content="2020-11-01T03:50:39.478Z">
 <meta property="article:author" content="GamerNoTitle">
+<meta property="article:tag" content="Tech">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/deploy.png">
   
     <link rel="alternate" href="/atom.xml" title="GamerNoTitle" type="application/atom+xml">
   
@@ -101,6 +108,10 @@ jQuery(window).load(function() {
 				
 				  <a  class="cui-color-theme" href="/tags">Tags</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				
+				  <a  class="cui-color-theme" href="/steamgames">Steam</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				  <a  class="cui-color-theme" href="/bangumis">Bangumi</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
 				  <a  class="cui-color-theme" target="_blank" rel="noopener" href="https://bili33.top/link">Link</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				
 				  <a  class="cui-color-theme" target="_blank" rel="noopener" href="https://bili33.top/About/">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -119,9 +130,15 @@ jQuery(window).load(function() {
     
 	<div class="article-meta">
 		
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tech/" rel="tag">Tech</a></li></ul>
+
         
-		<a href="/articles/test/" class="article-date">
-  <time datetime="2020-11-01T00:31:55.000Z" itemprop="datePublished">2020-11-01</time>
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tech/">Tech</a>
+  </div>
+
+		<a href="/articles/Heroku-V2ray/" class="article-date">
+  <time datetime="2020-11-01T01:46:44.000Z" itemprop="datePublished">2020-11-01</time>
 </a>
 	</div>
 	<div class="article-title">
@@ -129,7 +146,7 @@ jQuery(window).load(function() {
 	    
   
     <div class="article-title cui-typo-h2" itemprop="name">
-      test
+      用Heroku自建V2ray作为紧急连接
     </div>
   
 
@@ -138,9 +155,46 @@ jQuery(window).load(function() {
     <div class="article-entry" itemprop="articleBody">
 
       
-        
+        <h3 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h3><p><strong>请遵循当地法律使用，如有违反当地法律造成的责任，拒不承担</strong></p>
+<p><strong>Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。</strong></p>
+<p><strong>可以部署两个以上的应用，实现 <a target="_blank" rel="noopener" href="https://toutyrater.github.io/app/balance.html">负载均衡</a>，避免长时间大流量连接某一应用而被 Heroku 判定为滥用。</strong></p>
+<p><strong>Heroku 的网络并不稳定，部署前请三思。</strong></p>
+<a id="more"></a>
+
+<p>在开始之前，你需要准备：</p>
+<ul>
+<li>一个Heroku账号</li>
+<li>一个CloudFlare账号</li>
+</ul>
+<p>准备完这两个东西，你就可以开始下面的操作了</p>
+<hr>
+<h3 id="部署应用"><a href="#部署应用" class="headerlink" title="部署应用"></a>部署应用</h3><p>点击右边的这个<a target="_blank" rel="noopener" href="https://dashboard.heroku.com/new?template=https://github.com/bclswl0827/v2ray-heroku">链接</a>，会看到如下的页面，其中<code>APP name</code>这里随便填，但是不能跟别人重复（重复或不可用会标红）</p>
+<p>如果你这里加载出来了一个变量的框，写着<code>UUID</code>，下面有一串字母和数字组成的字符串，你可以修改它，到<a target="_blank" rel="noopener" href="https://www.uuidgenerator.net/version4">这里</a>生成一个，也可以直接保留（推荐修改，这是连接凭证）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/deploy.png" alt="部署应用"></p>
+<h3 id="修改UUID"><a href="#修改UUID" class="headerlink" title="修改UUID"></a>修改UUID</h3><p>（如果你在部署的时候已经修改过了UUID，或者认为没必要修改UUID，那就直接往下看CloudFlare部分）</p>
+<p>点击<code>Deploy APP</code>后就会开始部署，等部署完后下面会出现两个按钮，一个是<code>Manage APP</code>，另一个是<code>View</code>，我们点<code>Manage APP</code></p>
+<p>接着我们点<code>Settings</code>，然后点<code>Reveal Config Vars</code>，来修改我们的UUID</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/change-uuid.png" alt="修改uuid"></p>
+<h3 id="Cloudflare加速"><a href="#Cloudflare加速" class="headerlink" title="Cloudflare加速"></a>Cloudflare加速</h3><p>我们先到<a target="_blank" rel="noopener" href="https://github.com/olixu/cloudflare-ip-ping/releases">这个仓库下载它的Release</a>来使用其程序找到最适合我们的节点</p>
+<p>解压下载的压缩包，用管理员权限运行它的<code>pingip.exe</code>，输入线程，等待程序跑完</p>
+<p>在<code>ping_host.log</code>里面找到延迟最低的IP地址（一般在第一行），把它复制下来，等会会用到</p>
+<p>在跑程序的期间，你可以登录你的cloudflare，找到workers，新建一个workers，并把一下代码复制进去</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">addEventListener(</span><br><span class="line">  <span class="string">&quot;fetch&quot;</span>,<span class="function"><span class="params">event</span> =&gt;</span> &#123;</span><br><span class="line">     <span class="keyword">let</span> url=<span class="keyword">new</span> URL(event.request.url);</span><br><span class="line">     url.hostname=<span class="string">&quot;change-this-to-your-app-name.herokuapp.com&quot;</span>;</span><br><span class="line">     <span class="keyword">let</span> request=<span class="keyword">new</span> Request(url,event.request);</span><br><span class="line">     event. respondWith(</span><br><span class="line">       fetch(request)</span><br><span class="line">     )</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>把其中的hostname的地址改成你的herokuapp的地址，然后保存</p>
+<p>复制直接访问cloudflare提供的域名，如果提示<code>Bad Request</code>就可以了，把域名复制下来，等下会用到</p>
+<h3 id="配置V2Ray"><a href="#配置V2Ray" class="headerlink" title="配置V2Ray"></a>配置V2Ray</h3><p>打开你的v2ray，添加vme$$服务器，按照下面的图填写</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/Heroku-V2ray/v2conf.png" alt="配置v2"></p>
+<p>然后保存，愉快地使用v2ray就可以了</p>
+<p>（不会用v2的自己找教程，这里不教）</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>这只是一个临时用的方法，不适宜长期使用</p>
+<p>heroku每个月有运行时长限制，只适合轻度使用用户</p>
+<p>heroku的实例半小时没有访问就会自动休眠，你可以使用<a target="_blank" rel="noopener" href="https://github.com/GamerNoTitle/WakeHeroku">此项目</a>来避免这个问题</p>
+<hr>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://www.shopee6.com/web/web-tutorial/heroku-cloudflare-v2.html">Heroku+Cloudflare+V2搭建详细图文教程</a></p>
+
         <!--  -->
-          <!-- <div class="post-toc toc-right"></div> -->
+          <!-- <div class="post-toc toc-right"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text">免责声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%BA%94%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">部署应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9UUID"><span class="toc-number">3.</span> <span class="toc-text">修改UUID</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cloudflare%E5%8A%A0%E9%80%9F"><span class="toc-number">4.</span> <span class="toc-text">Cloudflare加速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEV2Ray"><span class="toc-number">5.</span> <span class="toc-text">配置V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">6.</span> <span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Reference"><span class="toc-number">7.</span> <span class="toc-text">Reference</span></a></li></ol></div> -->
        <!-- -->
        
     </div>
@@ -149,16 +203,6 @@ jQuery(window).load(function() {
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/articles/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -280,15 +324,15 @@ jQuery(window).load(function() {
     <div class="widget">
       <div style="text-align:center;padding:20px 0 10px 0">
 		 <div class="cui-inline" style="width:32%">
-			<p class="cui-typo-h3">2</p>
+			<p class="cui-typo-h3">1</p>
 			<p style="font-size:14px;font-weight:bold;margin-top:13px" class="cui-color-text-theme">Posts</p>
 		 </div>
 		 <div class="cui-inline"style="width:32%">
-		 	<p class="cui-typo-h3">0</p>
+		 	<p class="cui-typo-h3">1</p>
 		 	<p style="font-size:14px;font-weight:bold;margin-top:13px" class="cui-color-text-theme">Categories</p>
 		 </div>
 		 <div class="cui-inline"style="width:32%">
-		 	<p class="cui-typo-h3">0</p>
+		 	<p class="cui-typo-h3">1</p>
 		 	<p style="font-size:14px;font-weight:bold;margin-top:13px" class="cui-color-text-theme">Tags</p>
 		 </div>
 	  </div>
@@ -296,18 +340,32 @@ jQuery(window).load(function() {
   </div>
 	 
 		
+  <div class="widget-wrap animate__animated animate__fadeInUp">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Tech/" style="font-size: 10px;">Tech</a>
+    </div>
+  </div>
+
 	 
 		
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li></ul>
     </div>
   </div>
 
 
 	 
 		
+  <div class="widget-wrap animate__animated animate__fadeInUp">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li></ul>
+    </div>
+  </div>
+
 
 	 
 		
@@ -317,11 +375,7 @@ jQuery(window).load(function() {
       <ul>
         
           <li>
-            <a class="cui-typo-a" href="/articles/test/">test</a>
-          </li>
-        
-          <li>
-            <a class="cui-typo-a" href="/articles/hello-world/">Hello World</a>
+            <a class="cui-typo-a" href="/articles/Heroku-V2ray/">用Heroku自建V2ray作为紧急连接</a>
           </li>
         
       </ul>
@@ -458,6 +512,14 @@ jQuery(window).load(function() {
 			</li>
 		  
 		    <li style="text-align:right;font-size:16px;height:30px;display:block;margin-right:10px;margin-top:4px">
+				<a class="dol-text-color" style="width:100%;display:block;text-decoration:none;" href="/steamgames">Steam</a>
+			</li>
+		  
+		    <li style="text-align:right;font-size:16px;height:30px;display:block;margin-right:10px;margin-top:4px">
+				<a class="dol-text-color" style="width:100%;display:block;text-decoration:none;" href="/bangumis">Bangumi</a>
+			</li>
+		  
+		    <li style="text-align:right;font-size:16px;height:30px;display:block;margin-right:10px;margin-top:4px">
 				<a class="dol-text-color" style="width:100%;display:block;text-decoration:none;" target="_blank" rel="noopener" href="https://bili33.top/link">Link</a>
 			</li>
 		  
@@ -489,15 +551,15 @@ jQuery(window).load(function() {
     <div class="widget">
       <div style="text-align:center;padding:20px 0 10px 0">
 		 <div class="cui-inline" style="width:32%">
-			<p class="cui-typo-h3">2</p>
+			<p class="cui-typo-h3">1</p>
 			<p style="font-size:14px;font-weight:bold;margin-top:13px" class="cui-color-text-theme">Posts</p>
 		 </div>
 		 <div class="cui-inline"style="width:32%">
-		 	<p class="cui-typo-h3">0</p>
+		 	<p class="cui-typo-h3">1</p>
 		 	<p style="font-size:14px;font-weight:bold;margin-top:13px" class="cui-color-text-theme">Categories</p>
 		 </div>
 		 <div class="cui-inline"style="width:32%">
-		 	<p class="cui-typo-h3">0</p>
+		 	<p class="cui-typo-h3">1</p>
 		 	<p style="font-size:14px;font-weight:bold;margin-top:13px" class="cui-color-text-theme">Tags</p>
 		 </div>
 	  </div>
