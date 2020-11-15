@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://casual.bili33.top/article/diary8/</loc>
+    
+    <lastmod>2020-11-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://casual.bili33.top/article/diary7/</loc>
     
     <lastmod>2020-11-15</lastmod>
@@ -109,14 +116,14 @@
 
   
   <url>
-    <loc>https://casual.bili33.top/tags/diary/</loc>
+    <loc>https://casual.bili33.top/tags/Tech/</loc>
     <lastmod>2020-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://casual.bili33.top/tags/Tech/</loc>
+    <loc>https://casual.bili33.top/tags/diary/</loc>
     <lastmod>2020-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -125,14 +132,14 @@
 
   
   <url>
-    <loc>https://casual.bili33.top/categories/diary/</loc>
+    <loc>https://casual.bili33.top/categories/Tech/</loc>
     <lastmod>2020-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://casual.bili33.top/categories/Tech/</loc>
+    <loc>https://casual.bili33.top/categories/diary/</loc>
     <lastmod>2020-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
